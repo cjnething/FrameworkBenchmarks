@@ -7,7 +7,7 @@ dependencies:
     version: 0.5.0
   pool:
     github: ysbaddaden/pool
-    commit: "b2c519adaf4f7ef5a60b2027cd039f932db0b086"
+    version: 0.2.1
   kemal:
     github: "sdogruyol/kemal"
     version: 0.10.0
