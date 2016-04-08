@@ -18,9 +18,9 @@ php composer-installer.php --install-dir=${COMPOSER_HOME}
 
 cd ..
 
-echo "export COMPOSER_HOME=${COMPOSER_HOME}" > $IROOT/composer.installed
-echo -e "sudo php \$COMPOSER_HOME/composer.phar self-update" >> $IROOT/composer.installed
-echo -e "php \$COMPOSER_HOME/composer.phar global require fxp/composer-asset-plugin" >> $IROOT/composer.installed
-echo -e "sudo php \$COMPOSER_HOME/composer.phar install --no-interaction --working-dir \$TROOT --no-progress --optimize-autoloader" >> $IROOT/composer.installed
+# echo "export COMPOSER_HOME=${COMPOSER_HOME}" > $IROOT/composer.installed
+echo -e "composer self-update" >> $IROOT/composer.installed
+echo -e "composer global require fxp/composer-asset-plugin" >> $IROOT/composer.installed
+echo -e "composer install --no-interaction --working-dir \$TROOT --no-progress --optimize-autoloader" >> $IROOT/composer.installed
 
 source $IROOT/composer.installed
