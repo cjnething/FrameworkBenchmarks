@@ -156,3 +156,6 @@ func (s Fortunes) Swap(i, j int) { s[i], s[j] = s[j], s[i] }
 type ByMessage struct{ Fortunes }
 
 func (s ByMessage) Less(i, j int) bool { return s.Fortunes[i].Message < s.Fortunes[j].Message }
+
+
+// just adding this line so travis will test it hopefully
